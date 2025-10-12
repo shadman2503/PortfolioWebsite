@@ -32,6 +32,23 @@ input[class^=btn-]:hover {
   background: #ffbc00;
 }
 
+.bg-main {
+  background: #ffbc00;
+  color: #fff;
+}
+.bg-light {
+  background: #f4f4f4;
+  color: #000;
+}
+.bg-medium {
+  background: #ccc;
+  color: #000;
+}
+.bg-dark {
+  background: #333;
+  color: #fff;
+}
+
 .lead {
   font-size: 1.3rem;
   margin-bottom: 2rem;
@@ -160,6 +177,12 @@ img {
   font-size: 4rem;
   line-height: 1.2;
 }
+#header-inner {
+  background: url("../img/showcase.jpg") no-repeat 20% 30%/cover;
+  height: 5.5rem;
+  border-bottom: 3px solid #ffbc00;
+}
+
 #home-a .specials {
   margin-top: 3rem;
   display: grid;
@@ -234,6 +257,35 @@ img {
   line-height: 15px;
   padding: 1rem;
   transition: all 1s;
+}
+
+#about-a .about-info {
+  display: grid;
+  grid-template-areas: "bio-image bio bio" "award-1 award-2 award-3";
+  grid-gap: 1.2rem;
+}
+#about-a .about-info .bio-image {
+  grid-area: bio-image;
+}
+#about-a .about-info .bio {
+  grid-area: bio;
+  border-left: 3px solid #ffbc00;
+  padding: 0.8rem;
+}
+#about-a .about-info .award-1 {
+  grid-area: award-1;
+}
+#about-a .about-info .award-2 {
+  grid-area: award-2;
+}
+#about-a .about-info .award-3 {
+  grid-area: award-3;
+}
+#about-a .about-info .award-1 .fas,
+#about-a .about-info .award-2 .fas,
+#about-a .about-info .award-3 .fas {
+  color: #ffbc00;
+  margin: 1rem;
 }
 
 #main-footer {

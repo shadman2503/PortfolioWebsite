@@ -94,7 +94,11 @@ img {
     }
 
     // Header Inner
-    &-inner {}
+    &-inner {
+        background: $bg-img no-repeat 20% 30%/cover;
+        height: 5.5rem;
+        border-bottom: 3px solid $main-color;
+    }
 }
 
 // Home Section
@@ -194,6 +198,49 @@ img {
                 line-height: 15px;
                 padding: 1rem;
                 transition: all 1s;
+            }
+        }
+    }
+}
+
+// About Section
+#about {
+    &-a {
+        .about-info {
+            display: grid;
+            grid-template-areas:
+                'bio-image bio bio'
+                'award-1 award-2 award-3';
+            grid-gap: 1.2rem;
+
+            // Grid Area
+            .bio-image {
+                grid-area: bio-image;
+            }
+
+            .bio {
+                grid-area: bio;
+                border-left: 3px solid $main-color;
+                padding: 0.8rem;
+            }
+
+            .award-1 {
+                grid-area: award-1;
+            }
+
+            .award-2 {
+                grid-area: award-2;
+            }
+
+            .award-3 {
+                grid-area: award-3;
+            }
+
+            .award-1 .fas,
+            .award-2 .fas,
+            .award-3 .fas {
+                color: $main-color;
+                margin: 1rem;
             }
         }
     }
