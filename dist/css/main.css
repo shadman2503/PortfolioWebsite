@@ -441,6 +441,14 @@ img {
 }
 #contact-a .text-field .text-input {
   padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+#contact-a .text-field .text-input:focus {
+  border-color: #ffbc00;
+  box-shadow: 0 0 5px rgba(255, 204, 0, 0.4);
+  outline: none;
 }
 #contact-a Button[type=submit] {
   width: 50%;
